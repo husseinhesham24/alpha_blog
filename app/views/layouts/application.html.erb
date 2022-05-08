@@ -10,15 +10,15 @@
     <%= javascript_importmap_tags %>
     <%= javascript_include_tag "application" %>
     <link rel="stylesheet" href="/bootstrap-4-4-1/css/bootstrap.css" >
+    <link rel="stylesheet" href="../app/assets/stylesheets/custom.css">
     <script src="/jquery/jquery-3-4-1.js"></script>
     <script src="/bootstrap-4-4-1/js/bootstrap.js"></script>
   </head>
 
-  <body>
+  <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
     <%= render 'layouts/message' %>
-    <div class="container-fluid">
-      <%= yield %>
-    </div>
+    
+    <%= yield %>
   </body>
 </html>
