@@ -3,7 +3,7 @@
 }
 
 .jumbotron {
-  background-image: url("../images/jambo-img1.jpg");
+  background-image: url("jambo-img1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ body {
 }
 
 .footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
