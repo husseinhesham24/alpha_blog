@@ -6,6 +6,7 @@
       <div class="card text-center shadow mb-5 bg-white rounded">
         <div class="card-header">
           by <%= @article.user.username if @article.user %>
+          <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
         </div>
         <div class="card-body">
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>
@@ -14,8 +15,8 @@
         </div>
         <div class="card-footer text-muted">
           <small>
-            Edited <%=time_ago_in_words(@article.created_at)%> ago <br> 
-            Created <%=time_ago_in_words(@article.updated_at)%> ago
+            Created <%=time_ago_in_words(@article.created_at)%> ago <br>
+            Edited <%=time_ago_in_words(@article.updated_at)%> ago
           </small>
         </div> 
       </div>
