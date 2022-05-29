@@ -1,22 +1,11 @@
-# README
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Alpha Blog
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+*  A simple website which user can create an article and add it under some categories
+*  Using heroku for deploument
+*  Using postgresql for database
+*  Using Bootstrap for frontend
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+## Link
+* [Alpha Blog](https://alpha-blog-siv.herokuapp.com/)
