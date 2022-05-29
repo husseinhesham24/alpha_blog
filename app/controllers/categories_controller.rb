@@ -12,6 +12,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @articles = @category.articles.all
   end
 
   def create
