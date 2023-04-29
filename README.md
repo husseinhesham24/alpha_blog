@@ -2,10 +2,7 @@
 
 ## Description
 
-*  A simple website which user can create an article and add it under some categories
-*  Using heroku for deploument
-*  Using postgresql for database
-*  Using Bootstrap for frontend
+This website provides users with the ability to create, read, update, and delete articles and categorize them as well. The system has multiple user levels, and it is hosted on Heroku while utilizing PostgreSQL for database management and Bootstrap for the frontend.
 
 ## Link
 * [Alpha Blog](https://alpha-blog-siv.herokuapp.com/)
