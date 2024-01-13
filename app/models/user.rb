@@ -9,5 +9,17 @@ class User < ApplicationRecord
             length: { maximum: 105 },
             format: { with: VALID_EMAIL_REGEX }
 
+  validates :password, length: {minimum:8, maximum:20}
+  validate :password_complexity
+
+  private
+
+  def password_complexity
+    return unless password.present?
+
+    unless password.match?(/\A(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/)
+      errors.add :password, 'must include at least one number, one uppercase letter, one lowercase letter, and one symbol'
+    end
+  end
   has_secure_password
 end
